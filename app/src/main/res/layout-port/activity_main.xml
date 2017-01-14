@@ -10,13 +10,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView" />
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="365dp"
-        android:id="@+id/frame_layout">
-
-    </FrameLayout>
-
     <fragment
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
