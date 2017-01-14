@@ -14,14 +14,18 @@ public class MainActivity extends Activity {
 
 
     public void showDepositView() {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_layout, new DepositFragment());
-        transaction.commit();
+        if (findViewById(R.id.frame_layout) != null) {
+            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            transaction.replace(R.id.frame_layout, new DepositFragment());
+            transaction.commit();
+        }
     }
 
     public void showCalculatorView() {
-        FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_layout, new CalculatoreFragment());
-        transaction.commit();
+        if (findViewById(R.id.frame_layout) != null) {
+            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            transaction.replace(R.id.frame_layout, new CalculatoreFragment());
+            transaction.commit();
+        }
     }
 }
