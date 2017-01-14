@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TwoFragmentsApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="calculator">Kalkulator</string>
+    <string name="deposit">Lokata</string>
+</resources>
