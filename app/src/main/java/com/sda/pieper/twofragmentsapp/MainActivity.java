@@ -2,6 +2,7 @@ package com.sda.pieper.twofragmentsapp;
 
 import android.app.Activity;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 
 public class MainActivity extends Activity {
@@ -18,6 +19,10 @@ public class MainActivity extends Activity {
             FragmentTransaction transaction = getFragmentManager().beginTransaction();
             transaction.replace(R.id.frame_layout, new DepositFragment());
             transaction.commit();
+        }else {
+            Intent intent = new Intent(this, DetailActivity.class);
+            intent.putExtra(DetailActivity.PAGE, DetailActivity.DEPOSIT);
+            startActivity(intent);
         }
     }
 
@@ -26,6 +31,10 @@ public class MainActivity extends Activity {
             FragmentTransaction transaction = getFragmentManager().beginTransaction();
             transaction.replace(R.id.frame_layout, new CalculatoreFragment());
             transaction.commit();
+        }else {
+            Intent intent = new Intent(this, DetailActivity.class);
+            intent.putExtra(DetailActivity.PAGE, DetailActivity.CALCULATOR);
+            startActivity(intent);
         }
     }
 }
